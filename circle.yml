@@ -13,8 +13,8 @@ machine:
 dependencies:
     override:
         - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-19.1.0,android-19,extra-google-m2repository,extra-google-google_play_services,extra-android-support
-        - ls -l
-        - ./gradlew dependencies
+        # - ls -l
+        # - ./gradlew dependencies
 
 test:
     override:
