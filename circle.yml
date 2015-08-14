@@ -13,10 +13,9 @@ machine:
 dependencies:
     override:
         - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-21.1.2,android-21,extra-google-m2repository,extra-google-google_play_services,extra-android-support
-        # - ls -l
         # - ./gradlew dependencies
 
-# test:
-#     override:
-#         - (./gradlew assemble):
-#             timeout: 360
+test:
+    override:
+        - ./gradlew assemble:
+            timeout: 360
